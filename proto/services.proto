@@ -1,4 +1,4 @@
-syntax = "proto3"
+syntax = "proto3";
 
 package services;
 
@@ -21,6 +21,10 @@ message PaymentRequest {
 
 message PaymentResponse {
     bool success = 1;
+}
+
+message TransactionRequest {
+    string user_id = 1;
 }
 
 message TransactionResponse {
